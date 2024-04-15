@@ -1,0 +1,166 @@
+h1 {
+  font-family: sans-serif;
+  font-size: 32px;
+  color: black;
+  font-style: normal;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 24px;
+  color: black;
+  font-style: normal;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: black;
+  font-style: normal;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: black;
+  font-style: normal;
+}
+
+html {
+  font-family: "PT Sans", sans-serif;
+  line-height: 1.5;
+  color: #2c2c2c;
+}
+
+body {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.brandcolors {
+  background-color: rgb(234, 66, 66);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.primary {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.secondary {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.Lego-Logo {
+  height: 80px;
+}
+
+.primary > div {
+  border: 1px solid black;
+}
+
+.secondary > div {
+  border: 1px solid black;
+}
+
+.standardbutton1 {
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  height: 59px;
+  width: 251px;
+  padding: 15px;
+}
+
+.standardbutton1:hover {
+  background-color: black;
+  border-color: #f6f6f6;
+  color: #f6f6f6;
+}
+
+.standardbutton2 {
+  background-color: #e96f14;
+  border-radius: 5px;
+  height: 59px;
+  width: 251px;
+  padding: 15px;
+}
+
+.standardbutton2:hover {
+  background-color: white;
+  border-color: #e96f14;
+  color: black;
+}
+
+.standardbutton3 {
+  background-color: #ffd400;
+  border-radius: 5px;
+  height: 59px;
+  width: 251px;
+  padding: 15px;
+}
+
+.standardbutton3:hover {
+  background-color: black;
+  border-color: #ffd400;
+  color: white;
+}
+
+.areagiochi {
+  background-color: #abd9ff;
+  border-radius: 5px;
+  height: 25px;
+  width: 120px;
+  padding: 0px 10px;
+}
+
+.areagiochi:hover {
+  background-color: white;
+  color: black;
+}
+
+.greybutton {
+  background-color: #00000099;
+  border-radius: 50px;
+  height: 44px;
+  width: 154px;
+  padding: 0px 16px;
+  color: #ffffff;
+}
+
+.greybutton:hover {
+  background-color: #000000ab;
+  text-decoration: underline;
+}
+
+.form {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  width: 120px;
+  background: rgb(255, 255, 255);
+  color: rgb(20, 20, 20);
+  padding: 1.125rem 1.25rem 0px;
+  border: 1px solid rgb(224, 224, 224);
+}
+
+.sender {
+  display: inline-block;
+  width: 120px;
+  padding: 0.9375rem;
+  border-style: solid;
+  border-radius: 4px;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  background-color: rgb(233, 111, 20);
+  border-color: rgb(233, 111, 20);
+  color: rgb(0, 0, 0);
+  position: relative;
+  border-width: 2px;
+}
