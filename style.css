@@ -1,7 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+:root {
+  
+}
 
 html, body, div, span, applet, object, iframe, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -87,12 +86,13 @@ html {
   color: black;
 }
 
-body {
-  width: 50vh;
-  height: 50vh;
+
+
+.container {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); 
+  width: 100%;
 }
 
 .brandcolors {
@@ -218,6 +218,7 @@ padding: 10px;
 .primary > div {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 
 }
 .secondary {
@@ -228,7 +229,7 @@ padding: 10px;
 .secondary > div {
   display: flex;
   gap: 1rem;
-
+  flex-wrap: wrap;
 }
 
 
@@ -322,12 +323,13 @@ padding: 10px;
 }
 
 .greybutton {
-  background-color: #00000099;
+  background-color: #757575;
   border-radius: 50px;
-  height: 59px;
   width: fit-content;
-  padding: 1rem 2rem;
+  padding: 1rem 0.5rem;
   max-width: 250px;
+  color: white;
+  font-weight: bolder;
 }
 
 .greybutton:hover {
@@ -353,12 +355,20 @@ padding: 10px;
   padding-top: 60px;
 }
 
+.form {
+  padding-right: 18px;
+}
+
+.inputplaceholder ::placeholder {
+  padding-right: 18px;
+}
+
 .inputplaceholder > button {
   background-color: rgb(233, 111, 20);
 }
 
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   body {
     display: flex;
     flex-direction: row;
@@ -397,5 +407,5 @@ padding: 10px;
   .Lego-Logo {
     width: 80px;
   }
-}
+} */
 
