@@ -1,3 +1,58 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
 h1 {
   font-family: sans-serif;
   font-size: 32px;
@@ -29,7 +84,7 @@ p {
 html {
   font-family: "PT Sans", sans-serif;
   line-height: 1.5;
-  color: #2c2c2c;
+  color: black;
 }
 
 body {
@@ -41,25 +96,31 @@ body {
 }
 
 .brandcolors {
+  display: flex;
   background-color: rgb(239, 214, 92);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   border-radius: 20px;
   margin: 10px;
   padding: 10px;
   border: 2px solid black;
 }
 
+.primary > h5, .secondary > h5 {
+padding: 10px;
+}
+
+.brandcolors > div {
+ margin-top: 100px;
+ padding-right: 50px;
+}
+
 .logos {
+  display: flex;
   background-color: rgb(239, 214, 92);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   border-radius: 20px;
   margin: 10px;
   padding: 10px;
   border: 2px solid black;
+  justify-content: center;
 }
 
 .buttonstyles {
@@ -75,61 +136,139 @@ body {
 
 .icons {
   background-color: rgb(239, 214, 92);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
   border-radius: 20px;
   margin: 10px;
   padding: 10px;
   border: 2px solid black;
 }
+
+.icontitle {
+  padding-left: 100px;
+}
+
+.iconeintere {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding-top: 120px;
+  gap: 10px;
+  padding-right: 160px;
+}
+
+.testalego {
+  width: 100px;
+  height: 100px;
+}
+
+.legoscaletta {
+  width: 100px;
+  height: 100px;
+}
+
+.iconacerca {
+  width: 100px;
+  height: 100px;
+}
+
+.likelego {
+  width: 100px;
+  height: 100px;
+}
+
+.carrellologo {
+  width: 100px;
+  height: 100px; 
+}
+
 
 .typography {
   background-color: rgb(239, 214, 92);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   border-radius: 20px;
   margin: 10px;
   padding: 10px;
   border: 2px solid black;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
+.titletypography {
+  display: flex;
+ padding-left: 70px;
+}
+
+.Color {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .primary {
-  grid-row: 1;
-  grid-column: 1;
-}
-
-.secondary {
-  grid-row: 1;
-  grid-column: 2;
-}
-
-.Lego-Logo {
-  height: 150px;
-  width: 150px;
-  display: grid;
-  grid-column: 2 / span 2;
-  grid-row: 1 ;
-  justify-items: center;
-  align-self: center;
-  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .primary > div {
-  border: 1px solid black;
+  display: flex;
+  gap: 1rem;
+
+}
+.secondary {
+  display: flex;
+  flex-direction: row;
 }
 
 .secondary > div {
-  border: 1px solid black;
+  display: flex;
+  gap: 1rem;
+
 }
+
+
+
+.Lego-Logo {
+  width: 150px;
+  display: flex;
+  justify-items: center;
+  align-self: center;
+  padding-right: 50px;
+}
+
+
+.buttonstyles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.bottonieccezioni {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .standardbutton1 {
   background-color: #f6f6f6;
   border-radius: 5px;
   height: 59px;
-  width: 251px;
-  padding: 15px;
+  width: fit-content;
+  padding: 1rem 2rem;
+  max-width: 250px;
 }
 
 .standardbutton1:hover {
@@ -142,8 +281,9 @@ body {
   background-color: #e96f14;
   border-radius: 5px;
   height: 59px;
-  width: 251px;
-  padding: 15px;
+  width: fit-content;
+  padding: 1rem 2rem;
+  max-width: 250px;
 }
 
 .standardbutton2:hover {
@@ -156,8 +296,9 @@ body {
   background-color: #ffd400;
   border-radius: 5px;
   height: 59px;
-  width: 251px;
-  padding: 15px;
+  width: fit-content;
+  padding: 1rem 2rem;
+  max-width: 250px;
 }
 
 .standardbutton3:hover {
@@ -169,9 +310,10 @@ body {
 .areagiochi {
   background-color: #abd9ff;
   border-radius: 5px;
-  height: 25px;
-  width: 120px;
-  padding: 0px 10px;
+  height: 59px;
+  width: fit-content;
+  padding: 1rem 2rem;
+  max-width: 250px;
 }
 
 .areagiochi:hover {
@@ -182,10 +324,10 @@ body {
 .greybutton {
   background-color: #00000099;
   border-radius: 50px;
-  height: 44px;
-  width: 154px;
-  padding: 0px 16px;
-  color: #ffffff;
+  height: 59px;
+  width: fit-content;
+  padding: 1rem 2rem;
+  max-width: 250px;
 }
 
 .greybutton:hover {
@@ -193,31 +335,67 @@ body {
   text-decoration: underline;
 }
 
-.form {
-  -webkit-box-flex: 1;
-  flex-grow: 1;
-  height: 25px;
-  width: 120px;
-  background: rgb(255, 255, 255);
-  color: rgb(20, 20, 20);
-  padding: 1.125rem 1.25rem 0px;
-  border: 1px solid rgb(224, 224, 224);
+.formfields {
+  background-color: rgb(239, 214, 92);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
 }
 
-.sender {
-  display: inline-block;
-  width: 120px;
-  padding: 0.9375rem;
-  border-style: solid;
-  border-radius: 4px;
-  border-collapse: collapse;
-  text-align: center;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.1875rem;
-  background-color: rgb(233, 111, 20);
-  border-color: rgb(233, 111, 20);
-  color: rgb(0, 0, 0);
-  position: relative;
-  border-width: 2px;
+.formtitle {
+  display: flex;
+  justify-content: center;
 }
+
+.inputplaceholder {
+  display: flex;
+  padding-top: 60px;
+}
+
+.inputplaceholder > button {
+  background-color: rgb(233, 111, 20);
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .brandcolors {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Lego-Logo {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .brandcolors {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Lego-Logo {
+    width: 80px;
+  }
+}
+
