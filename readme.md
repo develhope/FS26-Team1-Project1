@@ -54,6 +54,10 @@ Una volta che hai fatto il commit delle tue modifiche nel tuo repository locale,
 1. Utilizza il comando `git push` seguito dal nome del repository remoto e del ramo:
 `git push origin nome-del-tuo-ramo`
 
+## Git Pull per aggiornamenti vari della propria repo in locale
+
+Ricordarsi di lanciare un git pull a momenti alterni per far sì che la propria repo sia aggiornata assieme a quella remota.
+
 
 ## Pull Request
 
