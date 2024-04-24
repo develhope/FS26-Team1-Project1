@@ -26,7 +26,7 @@ Quando lavori su nuove funzionalità o correzioni di bug, è buona prassi creare
 4. Nominazione di nuovi branch in fase di sviluppo: 
 Dal branch development si lancia un comando git branch nome-nuovo ramo.
 I vari sotto branch di development devono avere la seguente nominazione come esempio:
-"development/navbar", "development/footer" oppure "development/sezioneacquista", a seconda dell'oggetto in cui si vuole lavorare.
+"development-navbar", "development-footer" oppure "development-sezioneacquista", a seconda dell'oggetto in cui si vuole lavorare.
 
 
 
