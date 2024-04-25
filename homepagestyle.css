@@ -3,55 +3,123 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-
-
-
-
-
-
 
 h1 {
   font-family: sans-serif;
@@ -88,9 +156,156 @@ html {
 }
 
 body {
-  width: 50vh;
-  height: 50vh;
-  display: grid;
+  /* width: 50vh;
+  height: 50vh; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* display: grid;
   grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.setpiùapprezzati {
+  display: flex;
+  padding: 2.5rem 1.25rem;
+  flex-direction: column;
+  max-width: 82.5rem;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  /* padding-left: 70px; */
+  margin-bottom: 30px;
+  height: fit-content;
+  width: 100%;
+  font-size: 32px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.card {
+  display: flex;
+  justify-content: left;
+  box-sizing: border-box;
+  margin-left: 0px;
+  padding-left: 0px;
+  /* padding-right: 2.1875rem; */
+  /* width: 250px; */
+  height: 550px;
+  flex-direction: column;
+}
+
+.card-topsection {
+  display: flex;
+  height: 290px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  /* padding: 10px; */
+  position: relative;
+  width: 290px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 280px;
+  transition: transform 0.5s ease;
+}
+
+.card-img:hover {
+  transform: scale(1.1);
+}
+
+.new-flag {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin-left: 0.625rem;
+  margin-bottom: 0.625rem;
+  background-color: #ffd502;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  padding: 5px;
+  font-size: 12px;
+}
+
+.card-bottomsection {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 10px;
+  margin-top: 15px;
+  gap: 15px;
+  height: 175px;
+  width: 280px;
+}
+
+.nome-set {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-weight: 700;
+  height: 45px;
+}
+
+.rating-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.star-img {
+  height: 15px;
+  width: 15px;
+}
+
+.price {
+  font-weight: 900;
+}
+
+.standardbutton2 {
+  background-color: #e96f14;
+  border-radius: 5px;
+  border-color: none;
+  height: 59px;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500px;
+}
+
+.cards-scroller {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  /* overflow-x: scroll; */
 }
