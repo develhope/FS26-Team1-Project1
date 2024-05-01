@@ -156,49 +156,73 @@ html {
 }
 
 body {
-  /* width: 50vh;
-  height: 50vh; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(3, 1fr); */
+  font-family: sans-serif;
+  /* width: 100vw; */
+}
+
+main {
+  width: 100%;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container:hover {
+  cursor: default;
 }
 
 .setpiùapprezzati {
   display: flex;
   padding: 2.5rem 1.25rem;
   flex-direction: column;
-  max-width: 82.5rem;
+  width: 100%;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin: 0px auto;
 }
 
-.carousel-header {
+.setpiùapprezzati > .carousel-header {
+  width: 34%;
   display: flex;
   justify-content: left;
   align-items: center;
-  /* padding-left: 70px; */
   margin-bottom: 30px;
   height: fit-content;
-  width: 100%;
   font-size: 32px;
 }
 
+/* .carousel-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 30px;
+  height: fit-content;
+  font-size: 32px;
+} */
+
 .cards-container {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+}
+
+.cards-container3 {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
+  width: 99%;
+}
+
+.cards-container3 > .card {
+  min-width: 23.6%;
 }
 
 .card {
@@ -207,21 +231,37 @@ body {
   box-sizing: border-box;
   margin-left: 0px;
   padding-left: 0px;
-  /* padding-right: 2.1875rem; */
-  /* width: 250px; */
-  height: 550px;
+  height: 100%;
   flex-direction: column;
+  min-width: 23%;
 }
 
 .card-topsection {
   display: flex;
   height: 290px;
   border-bottom: 1px solid rgb(224, 224, 224);
-  /* padding: 10px; */
   position: relative;
-  width: 290px;
   justify-content: center;
   align-items: center;
+}
+
+.card-topsection:hover {
+  cursor: pointer;
+}
+
+.card-topsection2 {
+  display: flex;
+  height: 290px;
+  border: 1px solid rgb(224, 224, 224);
+  position: relative;
+  margin-left: 8px;
+  margin-right: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-topsection2:hover {
+  cursor: pointer;
 }
 
 .card-icon {
@@ -230,18 +270,20 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+  padding: 10px;
 }
 
 .card-img {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 280px;
+  max-width: 260px;
+  max-height: 260px;
   transition: transform 0.5s ease;
 }
 
 .card-img:hover {
-  transform: scale(1.1);
+  transform: scale(103%);
 }
 
 .new-flag {
@@ -251,9 +293,6 @@ body {
   margin-left: 0.625rem;
   margin-bottom: 0.625rem;
   background-color: #ffd502;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   padding: 5px;
   font-size: 12px;
 }
@@ -262,11 +301,12 @@ body {
   display: flex;
   flex-direction: column;
   height: fit-content;
-  padding: 10px;
+  padding: 20px;
   margin-top: 15px;
   gap: 15px;
   height: 175px;
-  width: 280px;
+
+  justify-content: space-between;
 }
 
 .nome-set {
@@ -275,6 +315,10 @@ body {
   width: 100%;
   font-weight: 700;
   height: 45px;
+}
+
+.nome-set:hover {
+  cursor: pointer;
 }
 
 .rating-bar {
@@ -294,18 +338,356 @@ body {
 .standardbutton2 {
   background-color: #e96f14;
   border-radius: 5px;
-  border-color: none;
-  height: 59px;
+  border-color: transparent;
+  min-height: 60px;
   width: 100%;
   padding: 1rem;
-  font-size: 1rem;
-  font-weight: 500px;
+  font-size: 0.96rem;
+  font-weight: 550;
+}
+
+.standardbutton2:hover {
+  background-color: transparent;
+  border-color: #e96f14;
+  cursor: pointer;
 }
 
 .cards-scroller {
+  overflow-x: auto;
+  width: 46.8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.cards-scroller2 {
+  overflow-x: auto;
+  width: 47.8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.ipreferitidiquestasettimana {
+  width: 100%;
   display: flex;
   align-items: center;
-  width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+}
 
-  /* overflow-x: scroll; */
+.layout-section > .carousel-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 30px;
+  height: fit-content;
+  width: 33.2%;
+  font-size: 32px;
+}
+
+.layout-section {
+  display: flex;
+  padding: 3.7rem 1.25rem;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.cards-container2 {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  gap: 1rem;
+  width: 33%;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.cards-container2:hover {
+  cursor: pointer;
+}
+
+.card2 {
+  width: 33.333%;
+  position: relative;
+  height: 100%;
+}
+
+.card2-img > img {
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  inset: 0px;
+}
+
+.text-wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-text-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding: 10px;
+  height: 30px;
+}
+
+.card-paragaph {
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 10px;
+  text-align: center;
+  height: 20px;
+}
+
+.card-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 1rem;
+  font-weight: 550;
+}
+
+.card-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card-btn > svg {
+  width: 10px;
+  height: 10px;
+}
+
+.cosastannocomprandoglialtri {
+  display: flex;
+  padding: 2.5rem 1.25rem;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0px auto;
+}
+
+.cosastannocomprandoglialtri > .carousel-header {
+  width: 38.7%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 30px;
+  height: fit-content;
+  font-size: 32px;
+}
+
+.cards-scroller::-webkit-scrollbar,
+.cards-scroller2::-webkit-scrollbar {
+  width: 33.333%;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1c4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4c4c4c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2c2c2c;
+  cursor: pointer;
+}
+
+.btn-next,
+.btn-prev {
+  width: 60px;
+  background-color: transparent;
+  border-color: transparent;
+  padding-bottom: 10%;
+}
+
+.btn-next2,
+.btn-prev2 {
+  width: 60px;
+  background-color: transparent;
+  border-color: transparent;
+  padding-bottom: 7.5%;
+}
+
+.cosastannocomprandoglialtri-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 85.1%;
+}
+
+.setpiùapprezzati-section {
+  display: flex;
+  flex-direction: row;
+  width: 74%;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-next:hover,
+.btn-prev:hover,
+.btn-next2,
+.btn-prev2 {
+  cursor: pointer;
+}
+
+.btn-next-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1c4;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border-color: #8c8c8c;
+}
+
+.btn-prev-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1c4;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border-color: #8c8c8c;
+  transform: rotate(180deg);
+}
+
+.btn-next-icon:hover,
+.btn-prev-icon:hover {
+  background-color: #8c8c8c;
+}
+
+.btn-next-icon img,
+.btn-prev-icon img {
+  width: 75%;
+  height: auto;
+  margin-left: 4px;
+}
+
+@media (max-width: 900px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .setpiùapprezzati {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    overflow: hidden;
+    justify-content: flex-start;
+  }
+
+  .setpiùapprezzati > .carousel-header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .setpiùapprezzati-section {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+  }
+
+  .cards-scroller,
+  .cards-scroller2 {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: left;
+    width: 172%;
+  }
+
+  .card {
+    display: flex;
+    width: 40%;
+  }
+
+  .cosastannocomprandoglialtri {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: flex-start;
+  }
+
+  .cosastannocomprandoglialtri > .carousel-header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .cosastannocomprandoglialtri-section {
+    display: flex;
+    justify-content: left;
+    width: 95%;
+  }
+
+  .ipreferitidiquestasettimana {
+    display: flex;
+    flex-direction: column;
+    width: 106%;
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+
+  .layout-section {
+    display: flex;
+    justify-content: left;
+    width: 140%;
+  }
+
+  .layout-section > .carousel-header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .cards-container2 {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+  }
+
+  .card2 {
+    width: 31%;
+  }
+
+  .btn-next {
+    /* visibility: hidden; */
+  }
 }
