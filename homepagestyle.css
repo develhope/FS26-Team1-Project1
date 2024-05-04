@@ -174,24 +174,114 @@ html {
 .header1row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
-.frecciaheaderminore,
-.frecciaheadermaggiore {
-  padding-top: 10px;
+.areagiochi {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(171, 217, 255);
+  box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
+  left: 90px;
+  border-radius: 5px;
+}
+
+.areagiochi:hover {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
+  position: absolute;
+  left: 90px;
+  border-radius: 5px;
+}
+
+.frecciareagiochi {
+  transform: rotate(180deg);
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: -3px;
+}
+
+.scrittaareagiochi {
+  display: inline-flex;
+  justify-content: center;
   padding: 10px;
 }
 
-.frecciaheaderminore {
-  transform: scaleX(-1);
-  padding-left: 100px;
+.areagiochi a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.75rem;
+  padding: 0px 0.625rem;;
+  text-align: center;
+  font-weight: 600;
+  width: auto;
 }
 
-.frecciaheadermaggiore {
-  padding-left: 100px;
+
+.frecciaheaderminore {
+  transition: transform 0.1s linear 0s;
+  display: block;
+  flex: 0 0 auto;
+  transform: rotate(180deg);
+  
 }
+
+.headercenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.utilityrighthead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.utilityrighthead > .accounticon > a  {
+  text-decoration: none;
+  font-size: small;
+}
+
+.utilityrighthead > .iscriviticon > a  {
+  text-decoration: none;
+  font-size: small;
+}
+
+.accounticon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.separatore {
+  background: rgb(117, 117, 117);
+  border: 0.0625rem solid black;
+  height: 30px;
+}
+
+.iscriviticon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightheadspan {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: -3px;
+}
+
 
 /* header nav */
 
@@ -333,6 +423,10 @@ main {
   justify-content: center;
   gap: 20px;
   padding-top: 20px;
+}
+
+.cliccabile > span > a {
+  text-decoration: none;
 }
 
 
