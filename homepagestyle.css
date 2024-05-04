@@ -238,6 +238,12 @@ html {
   gap: 40px;
 }
 
+.headp > p{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
 .utilityrighthead {
   display: flex;
   flex-direction: row;
@@ -265,7 +271,7 @@ html {
 
 .separatore {
   background: rgb(117, 117, 117);
-  border: 0.0625rem solid black;
+  border: 0.0525rem solid black;
   height: 30px;
 }
 
@@ -437,4 +443,37 @@ main {
   font-size: .75rem;
   line-height: 1.62;
   text-decoration: none;
+}
+
+/* --Media Queries Header-- */
+
+@media screen and (max-width: 767px) {
+  .quicklinks > .listquicklinks {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .searchicontainer {
+    display: none;
+  }
+
+  .headercenter svg {
+    display: none;
+  }
+
+  .utilityrighthead {
+    display: flex;
+    flex-direction: column;
+    gap: -10px;
+  }
+
+  .separatore {
+    display: none;
+  }
+
+  .header1row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 }
