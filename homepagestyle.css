@@ -169,6 +169,16 @@ html {
   width: 100%;
 }
 
+main {
+display: flex;
+flex-direction: column;
+justify-content: center;
+max-width: 100rem;
+overflow: hidden;
+margin: auto;
+}
+
+
 /* header in alto */
 
 .header1row {
