@@ -194,7 +194,6 @@ html {
   align-items: center;
   background-color: white;
   box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
-  position: absolute;
   left: 90px;
   border-radius: 5px;
 }
@@ -339,6 +338,13 @@ html {
   border-color: none;
   display: flex;
   align-items: center;
+  border-color: transparent;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button:hover {
+  text-decoration: underline;
 }
 
 nav {
