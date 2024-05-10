@@ -2,55 +2,123 @@
   --border-radius: 20px;
 }
 
-html, body, div, span, applet, object, iframe, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-
-
-
-
-
-
 
 h1 {
   font-family: sans-serif;
@@ -104,13 +172,14 @@ html {
   border: 2px solid black;
 }
 
-.primary > h5, .secondary > h5 {
-padding: 10px;
+.primary > h5,
+.secondary > h5 {
+  padding: 10px;
 }
 
 .brandcolors > div {
- margin-top: 100px;
- padding-right: 50px;
+  margin-top: 100px;
+  padding-right: 50px;
 }
 
 .logos {
@@ -179,9 +248,8 @@ padding: 10px;
 
 .carrellologo {
   width: 100px;
-  height: 100px; 
+  height: 100px;
 }
-
 
 .typography {
   background-color: rgb(239, 214, 92);
@@ -199,7 +267,7 @@ padding: 10px;
 
 .titletypography {
   display: flex;
- padding-left: 70px;
+  padding-left: 70px;
 }
 
 .Color {
@@ -218,8 +286,11 @@ padding: 10px;
 .primary > div {
   display: flex;
   gap: 1rem;
+<<<<<<< HEAD
   flex-wrap: wrap;
 
+=======
+>>>>>>> develpment-SetPiuApprezzati
 }
 .secondary {
   display: flex;
@@ -229,10 +300,11 @@ padding: 10px;
 .secondary > div {
   display: flex;
   gap: 1rem;
+<<<<<<< HEAD
   flex-wrap: wrap;
+=======
+>>>>>>> develpment-SetPiuApprezzati
 }
-
-
 
 .Lego-Logo {
   width: 150px;
@@ -241,7 +313,6 @@ padding: 10px;
   align-self: center;
   padding-right: 50px;
 }
-
 
 .buttonstyles {
   display: flex;
@@ -261,7 +332,6 @@ padding: 10px;
   justify-content: center;
   align-items: center;
 }
-
 
 .standardbutton1 {
   background-color: #f6f6f6;
@@ -367,8 +437,12 @@ padding: 10px;
   background-color: rgb(233, 111, 20);
 }
 
+<<<<<<< HEAD
 
 /* @media screen and (max-width: 768px) {
+=======
+@media screen and (max-width: 768px) {
+>>>>>>> develpment-SetPiuApprezzati
   body {
     display: flex;
     flex-direction: row;
@@ -407,5 +481,9 @@ padding: 10px;
   .Lego-Logo {
     width: 80px;
   }
+<<<<<<< HEAD
 } */
 
+=======
+}
+>>>>>>> develpment-SetPiuApprezzati
