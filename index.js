@@ -2,13 +2,13 @@ function scrollFw4() {
   const button = document.querySelector(".btn-next");
   button.addEventListener("click", function () {
     const container = document.querySelector(".cards-scroller");
-    let scrollAmount = (container.scrollLeft += 1340);
+    let scrollAmount = (container.scrollLeft += 1275);
     container.scrollLeft = scrollAmount;
   });
   const button2 = document.querySelector(".btn-next2");
   button2.addEventListener("click", function () {
     const container = document.querySelector(".cards-scroller2");
-    let scrollAmount = (container.scrollLeft += 1580);
+    let scrollAmount = (container.scrollLeft += 1530);
     container.scrollLeft = scrollAmount;
   });
 }
@@ -19,13 +19,13 @@ function scrollBw4() {
   const button = document.querySelector(".btn-prev");
   button.addEventListener("click", function () {
     const container = document.querySelector(".cards-scroller");
-    let scrollAmount = (container.scrollLeft -= 1340);
+    let scrollAmount = (container.scrollLeft -= 1275);
     container.scrollLeft = scrollAmount;
   });
   const button2 = document.querySelector(".btn-prev2");
   button2.addEventListener("click", function () {
     const container = document.querySelector(".cards-scroller2");
-    let scrollAmount = (container.scrollLeft -= 1580);
+    let scrollAmount = (container.scrollLeft -= 1530);
     container.scrollLeft = scrollAmount;
   });
 }

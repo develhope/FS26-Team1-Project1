@@ -161,7 +161,12 @@ body {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  overflow: hidden;
 }
 
 .container {
@@ -185,11 +190,10 @@ main {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin: 0px auto;
 }
 
 .setpiùapprezzati > .carousel-header {
-  width: 34%;
+  width: 1255px;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -218,11 +222,11 @@ main {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  width: 99%;
+  width: 100%;
 }
 
 .cards-container3 > .card {
-  min-width: 23.6%;
+  min-width: 23.3%;
 }
 
 .card {
@@ -233,7 +237,8 @@ main {
   padding-left: 0px;
   height: 100%;
   flex-direction: column;
-  min-width: 23%;
+  width: 25%;
+  min-width: 287px;
 }
 
 .card-topsection {
@@ -354,7 +359,7 @@ main {
 
 .cards-scroller {
   overflow-x: auto;
-  width: 46.8%;
+  width: 1255px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -363,7 +368,7 @@ main {
 
 .cards-scroller2 {
   overflow-x: auto;
-  width: 47.8%;
+  width: 1500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,7 +389,7 @@ main {
   align-items: center;
   margin-bottom: 30px;
   height: fit-content;
-  width: 33.2%;
+  width: 1255px;
   font-size: 32px;
 }
 
@@ -403,7 +408,7 @@ main {
   flex-flow: row;
   justify-content: center;
   gap: 1rem;
-  width: 33%;
+  width: 1255px;
   align-items: center;
   box-sizing: border-box;
 }
@@ -480,11 +485,10 @@ main {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin: 0px auto;
 }
 
 .cosastannocomprandoglialtri > .carousel-header {
-  width: 38.7%;
+  width: 1490px;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -493,8 +497,7 @@ main {
   font-size: 32px;
 }
 
-.cards-scroller::-webkit-scrollbar,
-.cards-scroller2::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 33.333%;
   height: 5px;
 }
@@ -525,7 +528,7 @@ main {
   width: 60px;
   background-color: transparent;
   border-color: transparent;
-  padding-bottom: 7.5%;
+  padding-bottom: 250px;
 }
 
 .cosastannocomprandoglialtri-section {
@@ -533,15 +536,16 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 85.1%;
+  width: 100%;
 }
 
 .setpiùapprezzati-section {
   display: flex;
   flex-direction: row;
-  width: 74%;
+  width: 100%;
   justify-content: center;
   align-items: center;
+  min-width: 2180px;
 }
 
 .btn-next:hover,
@@ -586,7 +590,7 @@ main {
   margin-left: 4px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   main {
     display: flex;
     flex-direction: column;
@@ -607,7 +611,7 @@ main {
   .setpiùapprezzati > .carousel-header {
     display: flex;
     justify-content: flex-start;
-    width: 100%;
+    width: 1200px;
     font-size: 1.5rem;
     margin-bottom: 0;
   }
@@ -683,11 +687,14 @@ main {
     width: 100%;
   }
 
-  .card2 {
-    width: 31%;
+  .cards-container3 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 169%;
   }
 
-  .btn-next {
-    /* visibility: hidden; */
+  .card2 {
+    width: 40%;
   }
 }
