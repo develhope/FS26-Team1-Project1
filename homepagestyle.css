@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 html,
 body,
 div,
@@ -100,6 +102,7 @@ section {
 }
 body {
   line-height: 1;
+  font-family: 'Rubik', sans-serif;
 }
 ol,
 ul {
@@ -150,7 +153,6 @@ p {
 }
 
 html {
-  font-family: "PT Sans", sans-serif;
   line-height: 1.5;
   color: black;
 }
@@ -177,6 +179,8 @@ max-width: 100rem;
 overflow: hidden;
 margin: auto;
 }
+
+
 
 
 /* header in alto */
