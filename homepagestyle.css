@@ -1034,3 +1034,707 @@ main {
     width: 40%;
   }
 }
+
+ /* qui inizia in evidenza */
+
+ .img_start_inevidenza_big {
+  width: 100%;
+ }
+
+
+
+.containerInevidenza_big {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 40px;
+  width: 100%;
+  background-color:rgb(228, 229, 236) ;
+}
+
+.containerInevidenza_medium {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.scritta_inevidenza {
+  display: flex;
+  font: 32px sans-serif;
+}
+
+
+.inevidenza_container_content {
+  display: flex;
+  width:100%;
+  gap: 20px;
+  
+}
+
+.insider_container {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background-image: url(assets/Insiders1-202404-Page-immaginerosa.jpeg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat
+}
+
+.scritta_insider {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.text_freccia {
+  display: flex;
+  align-items: baseline;
+}
+
+.freccieInevidenza {
+  padding-left: 10px;
+  height: 0.8rem;
+}
+
+.testoFreccia {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.testoFreccia:hover {
+  text-decoration: underline;
+}
+
+.squaloBuild_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.squalo_container {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: rgb(250, 153, 77);
+}
+
+.scrittaSqualo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 30px;
+}
+
+.build_container {
+  display: flex;
+  width: 100%;
+  background-color:rgb(198, 226, 243);
+  justify-content: space-between;
+  
+}
+
+.div_img {
+  display: flex;
+  width: 100%;
+}
+
+.textBuild {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 30px;
+}
+
+.img_inevidenza {
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+/* qui termina in evidenza e inizia leggi tutto */
+
+
+
+.container_leggitutto_big {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  padding: 20px 40px;
+  background-color:rgb(228, 229, 236) ;
+}
+
+.container_leggitutto_medium {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.container_leggitutto_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: auto;
+}
+
+
+.div_scritta_leggitutto {
+   display: flex;
+   flex-direction: column;
+}
+
+.leggiTutto {
+  font: 32px sans-serif
+}
+
+.container_leggitutto_cards {
+  display: flex;
+  width: 100%;
+}
+
+.div_leggitutto_cards {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.leggiTutto_card {
+  display: flex;
+  flex-direction: column;
+} 
+
+.div_img_card {
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+}
+
+.scritta_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   text-align: center;
+}
+
+.scritta_leggiTutti {
+  display: flex;
+  align-items: baseline;
+  font-weight: bold;
+  
+}
+
+.scritta_leggiTutti:hover {
+  text-decoration: underline;
+}
+
+.scritta_prima {
+  font-weight: bold;
+  font-size: 700;
+}
+
+/* qui inizia didascalia festa del papà */
+
+.paragraph_big {
+  display: flex;
+  width: auto;
+  padding: 20px 20px;
+
+}
+ 
+
+.paragraph_medium {
+  display: flex;
+  width: 100%;
+  margin: 1rem;
+  padding: 20px;
+  background-color:rgb(228, 229, 236) ;
+}
+
+.scritta_festapapà {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 20px;
+
+}
+
+/* qui finisce didascalia festa del papà e inizia il footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container_big_footer {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  background-color: rgb(32, 29, 72);
+  color: rgb(255, 255, 255);
+}
+
+.container_medium_footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container_content_footer {
+  display: flex;
+  width: 100%;
+  padding: 40px;
+}
+
+.colonnaConlogo {
+  display: flex;
+  width: 100%;
+}
+
+.img_footer_logoLego {
+  max-width: 97px;
+}
+
+.colonne_footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.elenco_footer {
+  display: flex;
+  flex-direction: column; 
+  padding: 20px 0;
+  
+}
+
+.elenco_footer_scritta {
+  color:rgb(255, 255, 255) ;
+  text-decoration: none;
+  line-height: 20px;
+}
+.elenco_footer_scritta:hover {
+  text-decoration: underline;
+}
+
+.bottom_italia {
+  display: flex;
+  font: 14px sans-serif ;
+  
+}
+
+.btn_italia {
+  display: flex;
+  background-color: rgb(24, 21, 45);
+  color: rgb(255, 255, 255) ;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px ;
+  padding-bottom: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.scrittaItalia {
+  display: flex;
+  color:rgb(255, 255, 255) ;
+  margin-left: 25px;
+}
+
+.titoli_footer {
+  color:rgb(255, 255, 255) ;
+}
+
+.inputplaceholder {
+  display: flex;
+
+}
+.container_penultimo_big{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 20px 40px;
+  background-color: rgb(32, 29, 72);
+  
+}
+
+.container_penultimo_medium {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container_penultimo_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form_footer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.inputplaceholder {
+   display: flex;
+   width: 100%;
+   margin-bottom: 20px;
+}
+
+.inputplaceholder ::placeholder {
+  padding-left: 20px;
+}
+
+.form {
+   border: 1px solid rgb(224, 224, 224);
+   
+}
+
+.inputplaceholder > button {
+  background-color: rgb(233, 111, 20);
+  border-left: none;
+  border-radius: 0px 0.3125rem 0.3125rem 0px;
+  box-shadow: none;
+  min-height: 50px;
+  width: 49px; 
+}
+
+.icone_appFooter {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+
+}
+
+.seguici_footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.a_icon_footer {
+   display: flex;
+  
+}
+
+.icon_footer {
+  object-fit: cover;
+  width: 40px;
+}
+
+.container_ultimo_big {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 20px 40px;
+  background-color: rgb(32, 29, 72);
+
+}
+
+.container_ultimo_medium {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container_ultimo_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.compagniFooter {
+  display: flex;
+}
+
+.allegri_compagni {
+  display: flex;
+  color:rgb(255, 255, 255) ;
+  font: 12px sans-serif;
+  line-height: 20px;
+}
+
+.privacy {
+  display: flex;
+  gap: 30px;
+}
+
+.mediaQuery {
+  display: none;
+}
+
+.mediaQuery_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .containerInevidenza_big {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 40px;
+    width: auto;
+    background-color:rgb(228, 229, 236) ;
+    flex-wrap: wrap;
+  }
+
+  .containerInevidenza_medium {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .inevidenza_container_content {
+    display: flex;
+    width:100% ;
+    max-height: auto;
+    gap: 20px;
+    flex-wrap: wrap
+  }
+
+  .insider_container {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(assets/Insiders1-202404-Page-immaginerosa.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+ }
+
+ .mediaQuery_mobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ }
+ .scritta_insider {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 40px 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+ .img_inevidenza{
+  object-fit: cover;
+  height: 325px;
+ }
+
+ .squalo_container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  background-color: rgb(250, 153, 77);
+  flex-wrap: wrap;
+}
+
+.scrittaSqualo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.build_container {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  height: auto;
+  background-color:rgb(198, 226, 243);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.textBuild {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+
+.squaloBuild_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.leggiTutto_card {
+  display: flex;
+  flex-direction: column;
+  min-width: 253.75px ;
+} 
+
+  .container_leggitutto_cards {
+  display: flex;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.div_leggitutto_cards {
+  display: flex;
+  gap: 20px;
+  width:fit-content;
+}
+
+
+
+
+.container_penultimo_big{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 20px 40px;
+  background-color: rgb(32, 29, 72);
+  
+}
+
+.container_penultimo_medium {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container_penultimo_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.privacy {
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+}
+
+@media screen and (max-width: 768px) {
+
+ 
+.leggiTutto_card {
+  display: flex;
+  flex-direction: column;
+  min-width: 253.75px ;
+} 
+
+  .container_leggitutto_cards {
+  display: flex;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+/* .container_leggitutto_cards::-webkit-scrollbar-track {
+  background-color: #ccc;
+box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+}
+.container_leggitutto_cards::-webkit-scrollbar-thumb {
+  background-color: #0066ce;
+border-radius: 10px;
+} */
+
+
+.div_leggitutto_cards {
+  display: flex;
+  gap: 20px;
+  width:fit-content;
+}
+
+#colonna_chiSiamo, #colonna_supporto, #colonna_attrazioni, #colonna_altreInfo {
+  display: none;
+}
+
+.mediaQuery {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form {width: 100%;}
+
+.lista_footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  
+}
+
+.freccetta_footer {
+  display: flex;
+  color: black;
+  transform: rotate(90deg);
+  
+}
+
+.container_content_footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form_footer_query {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container_penultimo_big{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 20px 40px;
+  background-color: rgb(32, 29, 72);
+  
+}
+
+.container_penultimo_medium {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container_penultimo_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form_footer{
+  display: none;
+}
+
+.privacy {
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+
+
+
+
+}
