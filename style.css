@@ -292,9 +292,6 @@ html {
   gap: 1rem;
 <<<<<<< HEAD
   flex-wrap: wrap;
-
-=======
->>>>>>> develpment-SetPiuApprezzati
 }
 .secondary {
   display: flex;
@@ -304,10 +301,7 @@ html {
 .secondary > div {
   display: flex;
   gap: 1rem;
-<<<<<<< HEAD
   flex-wrap: wrap;
-=======
->>>>>>> develpment-SetPiuApprezzati
 }
 
 .Lego-Logo {
@@ -488,6 +482,3 @@ html {
 <<<<<<< HEAD
 } */
 
-=======
-}
->>>>>>> develpment-SetPiuApprezzati
