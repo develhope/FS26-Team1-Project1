@@ -290,7 +290,6 @@ html {
 .primary > div {
   display: flex;
   gap: 1rem;
-<<<<<<< HEAD
   flex-wrap: wrap;
 }
 .secondary {
@@ -434,51 +433,4 @@ html {
 .inputplaceholder > button {
   background-color: rgb(233, 111, 20);
 }
-
-<<<<<<< HEAD
-
-/* @media screen and (max-width: 768px) {
-=======
-@media screen and (max-width: 768px) {
->>>>>>> develpment-SetPiuApprezzati
-  body {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .brandcolors {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .icons {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .Lego-Logo {
-    width: 80px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  body {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .brandcolors {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .icons {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .Lego-Logo {
-    width: 80px;
-  }
-<<<<<<< HEAD
-} */
 
