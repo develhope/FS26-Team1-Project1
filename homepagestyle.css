@@ -100,6 +100,8 @@ nav,
 section {
   display: block;
 }
+
+
 body {
   line-height: 1;
   font-family: "Rubik", sans-serif;
@@ -155,6 +157,8 @@ p {
 html {
   line-height: 1.5;
   color: black;
+  display:flex;
+  width:100vw;
 }
 
 .container {
@@ -180,6 +184,7 @@ main {
   overflow: hidden;
   margin: auto;
 }
+
 
 /* header in alto */
 
@@ -1035,6 +1040,231 @@ main {
   }
 }
 
+.containerinfinitimondi{
+  display: flex;
+  flex-direction: column;
+  width:auto;
+}
+
+.headersectionscoprimondi {
+  background-color:#300C54 ;
+  display: flex;
+justify-content: center;
+align-items: center;
+width:100%;
+}
+
+.titolonav {
+  color: #ffffff ;
+  font-size: 28px;
+  font-weight: bold;
+  margin:0px 40px 0px 0px;
+}
+
+.navbutton {
+  color:#ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  height: 44px;
+  padding-left:16px;
+  padding-right: 16px;
+  border: 2px solid #ffffff;
+  border-radius: 62px;
+  margin: 20px;
+  background-color: transparent;
+  display: flex;
+ align-items: center;
+}
+.navbutton:hover {
+  text-decoration: underline;
+  background-color:#ffffff;
+  color:#300C54;
+}
+.infinitimondidacreare{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.icona {
+  margin: 0px 0px 0px 12px;
+}
+
+.firstimmagine{
+  display: flex;
+  width: 100%;
+}
+
+.primascritta {
+  font-size: 40px;
+ 
+
+}
+.secondascritta{
+  font-size: 20px;
+  
+ 
+
+}
+.suimmagine{
+   color: #000;
+  position: absolute; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 115px;
+  gap:  20px;
+ 
+}
+.containerimage{
+  display: flex;
+  width: 100%;
+}
+  
+.imagebutton{
+  font-size:14px;
+ 
+  color: #ffffff;
+  background-color: #000; 
+  padding:10px 18px ;
+  border-radius: 5px;
+  margin: 20px 10px 0px;}
+
+  .imagebutton:hover{
+    color: #000;
+    background-color: #ffffff;
+    border:solid #ffffff;
+  }
+  .secondocontainer{
+    background-color: #300C54;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .secondotitolo{
+    font-size: 32px;
+    color: #ffffff;
+  padding: 30px; }
+
+
+ .primariga{
+  color: #ffffff;
+  
+  font-size: 20px;
+  margin: 0px 0px 15px;
+  padding: 10px;
+ }
+ .terzariga{
+  color: #ffffff;
+  
+ font-size: 16px;
+  margin: 0px 0px 15px;
+}
+
+.terzariga:hover{
+  text-decoration: underline;
+}
+.secondariga{
+  color: #ffffff;
+  
+  font-size: 14px; 
+  margin: 0px 0px 15px;
+}
+.icon {
+  margin: 0px 0px 0px 10px;
+}
+
+
+.altracard{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px 0px 0px -5px;
+  padding: 0px 0px 0px 20px;
+}
+.card {
+    min-width: 308px;
+    height: 213px;
+}
+.sezionecards{
+  display: flex;
+  width: fit-content;
+}
+.containergrande{
+display: flex;
+overflow-x: scroll;
+width: 1300px;
+
+
+}
+.ultimocontainer{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  
+}
+.ultimotitolo{
+  font-size: 27px;
+  color: #141414;
+  font-weight:bold;
+  margin: 20px;
+}
+.ultimoparagrafo{
+  font-size: 16px;
+  color: #141414;
+  
+  padding: 12px 0px;
+  
+}
+.ultimeimmagini{
+  background-color: #ffffff;
+display:flex;
+justify-content: center;
+
+
+
+}
+
+.ultime{
+  width: 331px;
+  height: 331px;
+  object-fit: cover;
+  padding: 10px;
+}
+.barra {
+  width: 100%;
+}
+
+.ultimobutton{
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #00000099;
+  padding: 0px 16px;
+  width: 154px;
+  height: 40px;
+  border-radius: 30px;
+  border:#00000099;
+}
+.ultimobutton:hover{
+  text-decoration: underline;
+}
+.icona{
+  margin: 0px 0px 0px 12px;
+}
+.blockbutton{
+  padding: 40px 20px;
+}
+@media screen and (max-width: 768px){
+}
+
+
+@media screen and (max-width: 375px){
+
+  
+}
  /* qui inizia in evidenza */
 
  .img_start_inevidenza_big {
@@ -1140,10 +1370,9 @@ main {
   
 }
 
-.div_img {
-  display: flex;
-  width: 100%;
-}
+
+
+
 
 .textBuild {
   display: flex;
@@ -1159,6 +1388,10 @@ main {
   object-fit: cover;
 }
 
+.div_img{
+  display: flex;
+  width: 100%;
+}
 
 
 /* qui termina in evidenza e inizia leggi tutto */
