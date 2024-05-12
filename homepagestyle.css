@@ -105,6 +105,9 @@ section {
 body {
   line-height: 1;
   font-family: "Rubik", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 ol,
 ul {
@@ -211,7 +214,6 @@ main {
   align-items: center;
   background-color: white;
   box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
-  left: 90px;
   border-radius: 5px;
 }
 
@@ -393,7 +395,7 @@ main {
   color: white;
   height: 500px;
   display: flex;
-  width: 1600px;
+  width: 100%;
 }
 
 .didascalieinternebanner {
@@ -1965,9 +1967,4 @@ border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
 }
- 
-
-
-
-
 }
