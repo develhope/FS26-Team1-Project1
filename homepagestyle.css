@@ -30,13 +30,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display:block;
 }
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
+
+
 body {
 	line-height: 1;
 }
@@ -89,38 +84,48 @@ html {
   font-family: "PT Sans", sans-serif;
   line-height: 1.5;
   color: black;
+  display:flex;
+  width:100vw;
 }
 
-body {
-  width: 50vh;
-  height: 50vh;
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(3, 1fr);
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100rem;
+  overflow: hidden;
+  margin: auto;
 }
-  
+  .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.containerinfinitimondi{
+  display: flex;
+  flex-direction: column;
+  width:auto;
+}
 
 .headersectionscoprimondi {
   background-color:#300C54 ;
   display: flex;
 justify-content: center;
 align-items: center;
-height: 90px;
-width:1450px;
+width:100%;
 }
 
 .titolonav {
   color: #ffffff ;
   font-size: 28px;
   font-weight: bold;
-  font-family: 'Cera Pro',sans-serif;
   margin:0px 40px 0px 0px;
 }
 
 .navbutton {
   color:#ffffff;
   font-size: 16px;
-  font-family: 'Cera Pro',sans-serif;
   font-weight: 500;
   height: 44px;
   padding-left:16px;
@@ -129,6 +134,8 @@ width:1450px;
   border-radius: 62px;
   margin: 20px;
   background-color: transparent;
+  display: flex;
+ align-items: center;
 }
 .navbutton:hover {
   text-decoration: underline;
@@ -138,27 +145,25 @@ width:1450px;
 .infinitimondidacreare{
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .icona {
   margin: 0px 0px 0px 12px;
 }
-img {
-  display: inline-block;
-    vertical-align: middle;
-    max-width: 100%;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    inset: 0px;
+
+.firstimmagine{
+  display: flex;
+  width: 100%;
 }
+
 .primascritta {
   font-size: 40px;
-  font-family: 'Cera Pro',sans-serif;
+ 
 
 }
 .secondascritta{
   font-size: 20px;
-  font-family: 'Cera Pro',sans-serif;
+  
  
 
 }
@@ -174,11 +179,12 @@ img {
 }
 .containerimage{
   display: flex;
-flex-direction: column;}
+  width: 100%;
+}
   
 .imagebutton{
   font-size:14px;
-  font-family: 'Cera Pro',sans-serif;
+ 
   color: #ffffff;
   background-color: #000; 
   padding:10px 18px ;
@@ -193,6 +199,10 @@ flex-direction: column;}
   .secondocontainer{
     background-color: #300C54;
     padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
   }
   .secondotitolo{
     font-size: 32px;
@@ -202,13 +212,14 @@ flex-direction: column;}
 
  .primariga{
   color: #ffffff;
-  font-family: 'Cera pro',sans-serif;
+  
   font-size: 20px;
   margin: 0px 0px 15px;
+  padding: 10px;
  }
  .terzariga{
   color: #ffffff;
-  font-family: 'Cera pro',sans-serif;
+  
  font-size: 16px;
   margin: 0px 0px 15px;
 }
@@ -218,7 +229,7 @@ flex-direction: column;}
 }
 .secondariga{
   color: #ffffff;
-  font-family:'Cera pro',sans-serif ;
+  
   font-size: 14px; 
   margin: 0px 0px 15px;
 }
@@ -228,55 +239,69 @@ flex-direction: column;}
 
 
 .altracard{
-display: flex;
+  display: flex;
   flex-direction: column;
   text-align: center;
   margin: 0px 0px 0px -5px;
   padding: 0px 0px 0px 20px;
 }
 .card {
-    width: 308px;
+    min-width: 308px;
     height: 213px;
 }
 .sezionecards{
   display: flex;
+  width: fit-content;
+}
+.containergrande{
+display: flex;
+overflow-x: scroll;
+width: 1300px;
+
+
 }
 .ultimocontainer{
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  
 }
 .ultimotitolo{
   font-size: 27px;
   color: #141414;
-  font-family: 'Cera pro',sans-serif;
   font-weight:bold;
   margin: 20px;
 }
 .ultimoparagrafo{
   font-size: 16px;
   color: #141414;
-  font-family: 'Cera pro',sans-serif;
+  
   padding: 12px 0px;
   
 }
 .ultimeimmagini{
   background-color: #ffffff;
-display: inline;
-justify-content: space-between;
+display:flex;
+justify-content: center;
+
+
+
 }
+
 .ultime{
-  width: 300px;
-  height: 300px;
-  margin: 20px;
+  width: 331px;
+  height: 331px;
+  object-fit: cover;
+  padding: 10px;
 }
-.ultimocontainer{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
+.barra {
+  width: 100%;
 }
+
 .ultimobutton{
   font-size: 16px;
-  font-family: 'Cera pro',sans-serif;
   color: #ffffff;
   background-color: #00000099;
   padding: 0px 16px;
@@ -292,8 +317,13 @@ justify-content: space-between;
   margin: 0px 0px 0px 12px;
 }
 .blockbutton{
-  padding: 20px 40px;
+  padding: 40px 20px;
+}
+@media screen and (max-width: 768px){
 }
 
 
+@media screen and (max-width: 375px){
 
+  
+}
