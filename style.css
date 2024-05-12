@@ -286,11 +286,8 @@ html {
 .primary > div {
   display: flex;
   gap: 1rem;
-<<<<<<< HEAD
   flex-wrap: wrap;
 
-=======
->>>>>>> develpment-SetPiuApprezzati
 }
 .secondary {
   display: flex;
@@ -300,10 +297,7 @@ html {
 .secondary > div {
   display: flex;
   gap: 1rem;
-<<<<<<< HEAD
   flex-wrap: wrap;
-=======
->>>>>>> develpment-SetPiuApprezzati
 }
 
 .Lego-Logo {
@@ -437,12 +431,8 @@ html {
   background-color: rgb(233, 111, 20);
 }
 
-<<<<<<< HEAD
 
 /* @media screen and (max-width: 768px) {
-=======
-@media screen and (max-width: 768px) {
->>>>>>> develpment-SetPiuApprezzati
   body {
     display: flex;
     flex-direction: row;
@@ -481,9 +471,5 @@ html {
   .Lego-Logo {
     width: 80px;
   }
-<<<<<<< HEAD
 } */
 
-=======
-}
->>>>>>> develpment-SetPiuApprezzati
