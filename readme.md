@@ -9,9 +9,7 @@ Per iniziare a lavorare al progetto, segui questi passaggi per clonare il reposi
 1. Apri il tuo terminale o prompt dei comandi.
 
 2. Utilizza il comando `git clone` seguito dall'URL del repository:
-https://github.com/develhope/FS26-Team1-Project1.git
-
-
+   https://github.com/develhope/FS26-Team1-Project1.git
 
 ## Ramificazione (Branching)
 
@@ -23,12 +21,19 @@ Quando lavori su nuove funzionalità o correzioni di bug, è buona prassi creare
 
 3. La nominazione dei nuovi branch passano tutti da "development" il quale altro non è che un raccoglitore generale di tutte le varie modifiche.
 
+<<<<<<< HEAD
 4. Nominazione di nuovi branch in fase di sviluppo: 
 Dal branch development si lancia un comando git branch nome-nuovo ramo.
 I vari sotto branch di development devono avere la seguente nominazione come esempio:
 "development-navbar", "development-footer" oppure "development-sezioneacquista", a seconda dell'oggetto in cui si vuole lavorare.
 
 
+=======
+4. Nominazione di nuovi branch in fase di sviluppo:
+   Dal branch development si lancia un comando git branch nome-nuovo ramo.
+   I vari sotto branch di development devono avere la seguente nominazione come esempio:
+   "development/navbar", "development/footer" oppure "development/sezioneacquista", a seconda dell'oggetto in cui si vuole lavorare.
+>>>>>>> development-infinitimondi
 
 ## Lavoro sul Codice
 
@@ -43,21 +48,19 @@ Dopo aver apportato le modifiche, devi aggiungerle al tuo repository locale e fa
 2. Fai un commit delle modifiche utilizzando il comando `git commit -m"Messaggio del commit che descrive le modifiche apportate`
 
 3. I COMMIT RIGOROSAMENTE IN INGLESE ED IN PRIMA PERSONA. ESEMPIO:
-"add navbar" dunque NON "adding navbar".
-oppure "fix bug in place" ecc.
-
+   "add navbar" dunque NON "adding navbar".
+   oppure "fix bug in place" ecc.
 
 ## Push delle Modifiche
 
 Una volta che hai fatto il commit delle tue modifiche nel tuo repository locale, devi caricarle nel repository remoto su GitHub. Ecco come farlo:
 
 1. Utilizza il comando `git push` seguito dal nome del repository remoto e del ramo:
-`git push origin nome-del-tuo-ramo`
+   `git push origin nome-del-tuo-ramo`
 
 ## Git Pull per aggiornamenti vari della propria repo in locale
 
 Ricordarsi di lanciare un git pull a momenti alterni per far sì che la propria repo sia aggiornata assieme a quella remota.
-
 
 ## Pull Request
 
@@ -69,4 +72,4 @@ Durante la collaborazione con altri membri del team, potresti incontrare conflit
 
 ---
 
-Queste sono le istruzioni di base per lavorare al progetto LEGO.com tramite Git. Assicurati di seguire le best practice di sviluppo e le linee guida del team durante il lavoro sul progetto.
+Queste sono le istruzioni di base per lavorare al progetto LEGO.com tramite Git. Assicurati di seguire le best practice di sviluppo e le linee guida del team durante il lavoro sul progetto. 
