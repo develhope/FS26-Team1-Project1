@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+
 :root {
   --border-radius: 20px;
 }
@@ -99,6 +102,7 @@ section {
 }
 body {
   line-height: 1;
+  font-family: "Rubik", sans-serif;
 }
 ol,
 ul {
@@ -149,7 +153,7 @@ p {
 }
 
 html {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1.5;
   color: black;
 }
@@ -287,7 +291,6 @@ html {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-
 }
 .secondary {
   display: flex;
@@ -430,46 +433,4 @@ html {
 .inputplaceholder > button {
   background-color: rgb(233, 111, 20);
 }
-
-
-/* @media screen and (max-width: 768px) {
-  body {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .brandcolors {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .icons {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .Lego-Logo {
-    width: 80px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  body {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .brandcolors {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .icons {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .Lego-Logo {
-    width: 80px;
-  }
-} */
 
