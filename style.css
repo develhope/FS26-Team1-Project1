@@ -291,6 +291,10 @@ html {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+
+>>>>>>> development
 }
 .secondary {
   display: flex;
@@ -434,3 +438,48 @@ html {
   background-color: rgb(233, 111, 20);
 }
 
+<<<<<<< HEAD
+=======
+
+/* @media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .brandcolors {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Lego-Logo {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .brandcolors {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Lego-Logo {
+    width: 80px;
+  }
+} */
+
+>>>>>>> development
