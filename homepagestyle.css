@@ -258,6 +258,17 @@ main {
   gap: 40px;
 }
 
+.linkcompraora:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+}
+
+.linkcompraora {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .utilityrighthead {
   display: flex;
   flex-direction: row;
@@ -311,6 +322,11 @@ main {
   margin-bottom: -3px;
 }
 
+.rightheadspan:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 /* header nav */
 
 .navsideright {
@@ -332,6 +348,15 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.heartsvg {
+cursor: pointer;
+}
+
+.carrellolegosvg {
+  cursor: pointer;
 }
 
 .navsideleft {
@@ -477,6 +502,10 @@ main {
 
 .cliccabile > span > a {
   text-decoration: none;
+}
+
+.cliccabile > span > a:hover {
+  text-decoration: underline;
 }
 
 .cliccabile {
@@ -1412,6 +1441,10 @@ footer {
   margin-bottom: 10px;
 }
 
+.btn_italia:hover {
+  cursor: pointer;
+}
+
 .scrittaItalia {
   display: flex;
   color: rgb(255, 255, 255);
@@ -1472,6 +1505,10 @@ footer {
   width: 49px;
 }
 
+.inputplaceholder > button:hover {
+  cursor: pointer;
+}
+
 .icone_appFooter {
   display: flex;
   width: 100%;
@@ -1515,6 +1552,12 @@ footer {
 
 .compagniFooter {
   display: flex;
+}
+
+.compagniFooter:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
 }
 
 .allegri_compagni {
@@ -1796,7 +1839,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 737px) {
   .headersectionscoprimondi {
     display: flex;
     flex-direction: column;
